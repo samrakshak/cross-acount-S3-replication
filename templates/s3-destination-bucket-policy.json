@@ -6,7 +6,7 @@
       "Sid": "1",
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::__SOURCE_ACC_ID__:role/__SOURCE_ROLE_NAME__"
+        "AWS": "*"
       },
       "Action": [
         "s3:ReplicateObject",
@@ -19,7 +19,7 @@
       "Sid": "2",
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::__SOURCE_ACC_ID__:root"
+        "AWS": "*"
       },
       "Action": [
         "s3:ObjectOwnerOverrideToBucketOwner"
@@ -30,7 +30,7 @@
       "Sid": "3",
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::__SOURCE_ACC_ID__:role/__SOURCE_ROLE_NAME__"
+        "AWS": "*"
       },
       "Action": [
         "s3:GetBucketVersioning",
